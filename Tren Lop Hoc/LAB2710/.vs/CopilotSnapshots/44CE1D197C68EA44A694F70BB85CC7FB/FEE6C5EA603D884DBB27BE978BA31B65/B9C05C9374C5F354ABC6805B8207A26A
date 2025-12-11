@@ -1,0 +1,81 @@
+﻿using LAB2710.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace LAB2710.Services
+{
+    public class GameService
+    {
+        public async Task<List<Game>> GetAllGamesAsync()
+        {
+            using var context = new GameDbContext();
+            return await context.Games.ToListAsync();
+        }
+
+        public async Task<Game?> GetGameByIdAsync(int id)
+        {
+            using var context = new GameDbContext();
+            return await context.Games.FindAsync(id);
+        }
+
+        public async Task<bool> AddGameAsync(Game game)
+        {
+            try
+            {
+                using var context = new GameDbContext();
+                context.Games.Add(game);
+                await context.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> UpdateGameAsync(Game game)
+        {
+            try
+            {
+                using var context = new GameDbContext();
+                context.Games.Update(game);
+                await context.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteGameAsync(int id)
+        {
+            try
+            {
+                using var context = new GameDbContext();
+                var game = await context.Games.FindAsync(id);
+                if (game != null)
+                {
+                    context.Games.Remove(game);
+                    await context.SaveChangesAsync();
+                    return true;
+                }
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<List<Game>> SearchGamesByTitleAsync(string title)
+        {
+            using var context = new GameDbContext();
+            return await context.Games
+                .Where(g => g.Title.Contains(title))
+                .ToListAsync();
+        }
+    }
+}

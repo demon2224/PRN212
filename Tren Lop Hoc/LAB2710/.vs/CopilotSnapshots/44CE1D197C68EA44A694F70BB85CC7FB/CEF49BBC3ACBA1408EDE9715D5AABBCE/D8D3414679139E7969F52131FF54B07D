@@ -1,0 +1,37 @@
+﻿using LAB2710.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace LAB2710.Data
+{
+    public static class DataSeeder
+    {
+        public static async Task SeedDataAsync()
+        {
+            using var context = new GameDbContext();
+            
+            // Áp dụng migrations để tạo/cập nhật database
+            await context.Database.MigrateAsync();
+            
+            // Kiểm tra xem đã có dữ liệu chưa
+            if (await context.Games.AnyAsync())
+            {
+                return; // Đã có dữ liệu rồi
+            }
+            
+            // Thêm dữ liệu mẫu
+            var games = new List<Game>
+            {
+                new Game { Title = "Valorant", Genre = "FPS", Price = 0 },
+                new Game { Title = "Minecraft", Genre = "Sandbox", Price = 19.99 },
+                new Game { Title = "Genshin Impact", Genre = "Adventure", Price = 0 },
+                new Game { Title = "The Witcher 3", Genre = "RPG", Price = 29.99 },
+                new Game { Title = "Cyberpunk 2077", Genre = "RPG", Price = 59.99 },
+                new Game { Title = "DOOM Eternal", Genre = "FPS", Price = 49.99 },
+                new Game { Title = "League of Legends", Genre = "MOBA", Price = 0 }
+            };
+            
+            context.Games.AddRange(games);
+            await context.SaveChangesAsync();
+        }
+    }
+}

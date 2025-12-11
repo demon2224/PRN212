@@ -1,0 +1,106 @@
+﻿<Window x:Class="WpfApp_2010.admin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WpfApp_2010"
+    mc:Ignorable="d"
+    Title="Admin Dashboard" Height="600" Width="1000">
+    
+<Window.Resources>
+    <!-- Sidebar Button Style -->
+    <Style x:Key="SidebarButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="#3498db"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" 
+                            CornerRadius="5" Padding="10,5">
+                        <ContentPresenter HorizontalAlignment="Center" 
+                                        VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#2980b9"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#1f618d"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+        
+    <!-- Modern Button Style for Back button -->
+    <Style x:Key="ModernButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="#95a5a6"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" 
+                            CornerRadius="3" Padding="10,5">
+                        <ContentPresenter HorizontalAlignment="Center" 
+                                        VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#7f8c8d"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header với nút Back -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10" Background="#f0f0f0">
+            <Button x:Name="btnBack" Content="← Back to Main" Width="120" Height="30" 
+                    Click="btnBack_Click" Style="{DynamicResource ModernButtonStyle}"/>
+            <TextBlock Text="Admin Dashboard" FontSize="18" FontWeight="Bold" 
+                       VerticalAlignment="Center" Margin="20,0,0,0" Foreground="#333"/>
+        </StackPanel>
+        
+        <!-- Main Content Area -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <!-- Sidebar -->
+            <Border Grid.Column="0" Background="#2c3e50" BorderBrush="#34495e" BorderThickness="0,0,1,0">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Menu" Foreground="White" FontSize="16" FontWeight="Bold" 
+                               Margin="0,10,0,20" HorizontalAlignment="Center"/>
+                    
+                    <Button x:Name="btnFunc1" Content="Function 1" Width="150" Height="40" 
+                            Margin="0,5" Click="btnFunc1_Click" Style="{DynamicResource SidebarButtonStyle}"/>
+                    <Button x:Name="btnFunc2" Content="Function 2" Width="150" Height="40" 
+                            Margin="0,5" Click="btnFunc2_Click" Style="{DynamicResource SidebarButtonStyle}"/>
+                    <Button x:Name="btnFunc3" Content="Function 3" Width="150" Height="40" 
+                            Margin="0,5" Click="btnFunc3_Click" Style="{DynamicResource SidebarButtonStyle}"/>
+                </StackPanel>
+            </Border>
+            
+            <!-- Content Frame -->
+            <Frame Grid.Column="1" x:Name="MainFrame" NavigationUIVisibility="Hidden" 
+                   Background="White"/>
+        </Grid>
+    </Grid>
+</Window>

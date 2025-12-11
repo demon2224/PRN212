@@ -1,0 +1,47 @@
+﻿namespace Language
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Toi ten la Anh Tuan va toi o Can Tho !"); //cach 1
+            Console.WriteLine("Ten toi la {0} va toi o {1} !", "Anh Tuan", "Can Tho");//cach 2
+
+            //cach 3
+            string name = "Anh Tuan";
+            int age = 22;
+            Console.WriteLine("Ten toi la " + name + " va toi o " + age + " !"); //cach thong dung
+            Console.WriteLine($"Ten toi la {name} va toi o {age} !"); //cach rut gon lai (.Net)
+
+            Console.WriteLine("Nhap ten cua ban:");
+            string? name1 = Console.ReadLine(); // Read the name input
+            Console.WriteLine("Nhap tuoi cua ban:");
+            int age1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"ten cua toi la {name1} va toi nam nay toi {age1} tuoi");
+
+            //Console.WriteLine("nhap so nguyen to:");
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //int n = Validation.CheckInputInt();
+            //gencode nhanh Alt + Enter
+            //if (IsPrime(n))
+            //{
+            //    Console.WriteLine("day la so nguyen to!");
+            //} 
+            //else
+            //{
+            //    Console.WriteLine("day khong phai la so nguyen to!");
+            //}
+        }
+
+        //private static bool IsPrime(int n)
+        //{
+        //    if (n < 0) return false;        
+        //    if (n == 0 || n == 1) return false;
+        //    for (int i = 2; i <= Math.Sqrt(n); i++)
+        //    {
+        //        if (n % i == 0) return false;
+        //    }
+        //    return true;
+        //}
+    }
+}

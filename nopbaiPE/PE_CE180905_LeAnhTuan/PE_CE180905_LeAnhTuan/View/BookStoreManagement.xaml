@@ -1,0 +1,53 @@
+﻿<Window x:Class="PE_CE180905_LeAnhTuan.View.BookStoreManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PE_CE180905_LeAnhTuan.View"
+        mc:Ignorable="d"
+        Title="BookStoreManagement" Height="450" Width="800">
+    <Grid Margin="10,10,0,10" HorizontalAlignment="Left" Width="708">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Input Fields for Adding New Customer -->
+        <StackPanel  Orientation="Horizontal" Margin="0,0,-365,10">
+            <!-- TextBox for Name -->
+            <TextBox Width="97" Margin="5"    Tag="Title"  Text="{Binding NewBook.Title, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Width="108" Margin="5"    Tag="Author"  Text="{Binding NewBook.Author, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Width="112" Margin="5"    Tag="Category"  Text="{Binding NewBook.Category, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Width="116" Margin="5"    Tag="Quantity"  Text="{Binding NewBook.Quantity, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Width="120" Margin="5"   Tag="Price" Text="{Binding NewBook.Price, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Content="Add" Command="{Binding AddCommand}" CommandParameter="{Binding NewBooking}" Margin="5" />
+        </StackPanel>
+
+        <!-- DataGrid for Displaying Customers -->
+        <DataGrid ItemsSource="{Binding BookStores}" 
+                SelectedItem="{Binding SelectedBook, Mode=OneWayToSource}" 
+                AutoGenerateColumns="False" Grid.Row="1" Margin="0,0,10,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True" Width="Auto"/>
+                <DataGridTextColumn Header="Title" Binding="{Binding Title}" Width="*"/>
+                <DataGridTextColumn Header="Author" Binding="{Binding Author}" Width="*"/>
+                <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="*"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="*"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="*"/>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- TextBox hiển thị dữ liệu từ SelectedCustomer -->
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="2">
+
+            <Button Content="Update" Command="{Binding UpdateCommand}" Margin="5"/>
+            <Button Content="Delete" Command="{Binding DeleteCommand}" Margin="5"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

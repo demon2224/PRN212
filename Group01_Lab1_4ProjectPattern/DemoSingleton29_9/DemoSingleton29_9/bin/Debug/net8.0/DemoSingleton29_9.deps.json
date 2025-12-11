@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DemoSingleton29_9/1.0.0": {
+        "runtime": {
+          "DemoSingleton29_9.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DemoSingleton29_9/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

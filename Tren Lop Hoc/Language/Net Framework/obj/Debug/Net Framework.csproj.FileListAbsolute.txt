@@ -1,0 +1,8 @@
+D:\FA25 05\PRN212\file tu hoc\Language\Net Framework\bin\Debug\Net Framework.exe.config
+D:\FA25 05\PRN212\file tu hoc\Language\Net Framework\bin\Debug\Net Framework.exe
+D:\FA25 05\PRN212\file tu hoc\Language\Net Framework\bin\Debug\Net Framework.pdb
+D:\FA25 05\PRN212\file tu hoc\Language\Net Framework\obj\Debug\Net Framework.csproj.AssemblyReference.cache
+D:\FA25 05\PRN212\file tu hoc\Language\Net Framework\obj\Debug\Net Framework.csproj.CoreCompileInputs.cache
+D:\FA25 05\PRN212\file tu hoc\Language\Net Framework\obj\Debug\Net Framework.exe
+D:\FA25 05\PRN212\file tu hoc\Language\Net Framework\obj\Debug\Net Framework.pdb
+D:\FA25 05\PRN212\file tu hoc\Language\Net Framework\obj\Debug\Net Framework.exe.config

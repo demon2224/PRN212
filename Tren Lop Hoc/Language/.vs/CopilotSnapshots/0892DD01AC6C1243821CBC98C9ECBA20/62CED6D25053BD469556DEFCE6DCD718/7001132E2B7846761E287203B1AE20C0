@@ -1,0 +1,59 @@
+﻿namespace BaiTap1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Clear();
+            Console.WriteLine("=== THONG TIN SINH VIEN ===\n");
+
+            var sinhVien = new
+            {
+                MSSV = "CE180905",
+                TenSV = "Le Anh Tuan",
+                NamSinh = 2004
+            };
+
+            // In ra thông tin sinh viên
+            Console.WriteLine("Thong tin sinh vien:");
+            Console.WriteLine($"Ma so sinh vien: {sinhVien.MSSV}");
+            Console.WriteLine($"Ten sinh vien: {sinhVien.TenSV}");
+            Console.WriteLine($"Nam sinh: {sinhVien.NamSinh}");
+            
+            // Tính tuổi hiện tại
+            int tuoiHienTai = DateTime.Now.Year - sinhVien.NamSinh;
+            Console.WriteLine($"Tuoi hien tai: {tuoiHienTai}");
+
+            // In theo format đẹp hơn với bảng
+            Console.WriteLine("\n=== BANG THONG TIN CHI TIET ===");
+            Console.WriteLine("┌─────────────────────┬─────────────────────┐");
+            Console.WriteLine("│ Thong tin           │ Gia tri             │");
+            Console.WriteLine("├─────────────────────┼─────────────────────┤");
+            Console.WriteLine($"│ MSSV                │ {sinhVien.MSSV,-19} │");
+            Console.WriteLine($"│ Ten sinh vien       │ {sinhVien.TenSV,-19} │");
+            Console.WriteLine($"│ Nam sinh            │ {sinhVien.NamSinh,-19} │");
+            Console.WriteLine($"│ Tuoi                │ {tuoiHienTai,-19} │");
+            Console.WriteLine("└─────────────────────┴─────────────────────┘");
+
+            // Thêm thông tin bổ sung
+            Console.WriteLine("\n=== THONG TIN BO SUNG ===");
+            string khoaHoc = sinhVien.MSSV.StartsWith("CE") ? "Computer Engineering" : "Khong xac dinh";
+            string khoa = sinhVien.MSSV.Substring(2, 2); // Lấy năm từ MSSV
+            Console.WriteLine($"Chuyen nganh: {khoaHoc}");
+            Console.WriteLine($"Khoa hoc: 20{khoa}");
+            
+            // Xác định thế hệ
+            string theHe = sinhVien.NamSinh switch
+            {
+                >= 1997 and <= 2012 => "Gen Z",
+                >= 1981 and <= 1996 => "Millennials",
+                >= 1965 and <= 1980 => "Gen X",
+                _ => "Khong xac dinh"
+            };
+            Console.WriteLine($"The he: {theHe}");
+
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadKey();
+        }
+    }
+}

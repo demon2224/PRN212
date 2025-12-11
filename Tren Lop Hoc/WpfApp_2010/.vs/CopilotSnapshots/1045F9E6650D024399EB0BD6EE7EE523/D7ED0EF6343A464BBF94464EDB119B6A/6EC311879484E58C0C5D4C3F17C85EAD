@@ -1,0 +1,184 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace WpfApp_2010.admin
+{
+    /// <summary>
+    /// Interaction logic for afunc1.xaml
+    /// </summary>
+    public partial class afunc1 : Page
+    {
+        private ObservableCollection<Product> products;
+        private int nextProductId = 1;
+
+        public afunc1()
+        {
+            InitializeComponent();
+            InitializeProducts();
+            LoadProducts();
+        }
+
+        private void InitializeProducts()
+        {
+            products = new ObservableCollection<Product>
+            {
+                new Product { ProductId = nextProductId++, ProductName = "Laptop Dell XPS 13", Category = "Electronics", Price = 999.99m, Stock = 15, Status = "Active" },
+                new Product { ProductId = nextProductId++, ProductName = "Wireless Mouse", Category = "Electronics", Price = 29.99m, Stock = 50, Status = "Active" },
+                new Product { ProductId = nextProductId++, ProductName = "Programming Book", Category = "Books", Price = 45.00m, Stock = 20, Status = "Active" },
+                new Product { ProductId = nextProductId++, ProductName = "Office Chair", Category = "Home & Garden", Price = 199.99m, Stock = 8, Status = "Inactive" }
+            };
+            
+            ProductDataGrid.ItemsSource = products;
+        }
+
+        private void LoadProducts()
+        {
+            ProductDataGrid.SelectionChanged += ProductDataGrid_SelectionChanged;
+        }
+
+        private void ProductDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ProductDataGrid.SelectedItem is Product selectedProduct)
+            {
+                txtProductId.Text = selectedProduct.ProductId.ToString();
+                txtProductName.Text = selectedProduct.ProductName;
+                cmbCategory.Text = selectedProduct.Category;
+                txtPrice.Text = selectedProduct.Price.ToString();
+                txtStock.Text = selectedProduct.Stock.ToString();
+                cmbStatus.Text = selectedProduct.Status;
+            }
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txtProductName.Text) ||
+                    string.IsNullOrWhiteSpace(cmbCategory.Text) ||
+                    string.IsNullOrWhiteSpace(txtPrice.Text) ||
+                    string.IsNullOrWhiteSpace(txtStock.Text) ||
+                    string.IsNullOrWhiteSpace(cmbStatus.Text))
+                {
+                    MessageBox.Show("Please fill in all fields.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                var newProduct = new Product
+                {
+                    ProductId = nextProductId++,
+                    ProductName = txtProductName.Text.Trim(),
+                    Category = cmbCategory.Text,
+                    Price = decimal.Parse(txtPrice.Text),
+                    Stock = int.Parse(txtStock.Text),
+                    Status = cmbStatus.Text
+                };
+
+                products.Add(newProduct);
+                ClearForm();
+                MessageBox.Show("Product added successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error adding product: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (ProductDataGrid.SelectedItem is Product selectedProduct)
+                {
+                    if (string.IsNullOrWhiteSpace(txtProductName.Text) ||
+                        string.IsNullOrWhiteSpace(cmbCategory.Text) ||
+                        string.IsNullOrWhiteSpace(txtPrice.Text) ||
+                        string.IsNullOrWhiteSpace(txtStock.Text) ||
+                        string.IsNullOrWhiteSpace(cmbStatus.Text))
+                    {
+                        MessageBox.Show("Please fill in all fields.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        return;
+                    }
+
+                    selectedProduct.ProductName = txtProductName.Text.Trim();
+                    selectedProduct.Category = cmbCategory.Text;
+                    selectedProduct.Price = decimal.Parse(txtPrice.Text);
+                    selectedProduct.Stock = int.Parse(txtStock.Text);
+                    selectedProduct.Status = cmbStatus.Text;
+
+                    ProductDataGrid.Items.Refresh();
+                    MessageBox.Show("Product updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Please select a product to edit.", "No Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error updating product: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (ProductDataGrid.SelectedItem is Product selectedProduct)
+                {
+                    var result = MessageBox.Show($"Are you sure you want to delete '{selectedProduct.ProductName}'?", 
+                                               "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        products.Remove(selectedProduct);
+                        ClearForm();
+                        MessageBox.Show("Product deleted successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please select a product to delete.", "No Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error deleting product: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void ClearForm()
+        {
+            txtProductId.Text = "";
+            txtProductName.Text = "";
+            cmbCategory.SelectedIndex = -1;
+            txtPrice.Text = "";
+            txtStock.Text = "";
+            cmbStatus.SelectedIndex = -1;
+            ProductDataGrid.SelectedItem = null;
+        }
+    }
+
+    // Product model class
+    public class Product
+    {
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+        public string Category { get; set; }
+        public decimal Price { get; set; }
+        public int Stock { get; set; }
+        public string Status { get; set; }
+    }
+}

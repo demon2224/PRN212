@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WpfApp Button Demon 1510/1.0.0": {
+        "runtime": {
+          "WpfApp Button Demon 1510.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WpfApp Button Demon 1510/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

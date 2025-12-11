@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp 1510", "WpfApp 1510\WpfApp 1510.csproj", "{0587E37F-534B-4EA0-90B5-B7168E932B25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp Button Demon 1510", "WpfApp Button Demon 1510\WpfApp Button Demon 1510.csproj", "{FA262D70-21B0-4828-9BEA-4D7DC9F81987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp Canvas Panel 1510", "WpfApp Canvas Panel 1510\WpfApp Canvas Panel 1510.csproj", "{625BAD04-B80E-4D49-AD7C-B6913CE77A71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp WrapPanel 1510", "WpfApp WrapPanel 1510\WpfApp WrapPanel 1510.csproj", "{972369A4-E44E-48EF-863E-AA321BDE0968}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp Gril Panel 1510", "WpfApp Gril Panel 1510\WpfApp Gril Panel 1510.csproj", "{151EAA30-7017-4F5A-87C1-EA11A1E3EBCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockPanel", "DockPanel\DockPanel.csproj", "{066C7FE0-CE01-4FF7-9B24-AAA588089927}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0587E37F-534B-4EA0-90B5-B7168E932B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0587E37F-534B-4EA0-90B5-B7168E932B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0587E37F-534B-4EA0-90B5-B7168E932B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0587E37F-534B-4EA0-90B5-B7168E932B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA262D70-21B0-4828-9BEA-4D7DC9F81987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA262D70-21B0-4828-9BEA-4D7DC9F81987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA262D70-21B0-4828-9BEA-4D7DC9F81987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA262D70-21B0-4828-9BEA-4D7DC9F81987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{625BAD04-B80E-4D49-AD7C-B6913CE77A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625BAD04-B80E-4D49-AD7C-B6913CE77A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625BAD04-B80E-4D49-AD7C-B6913CE77A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625BAD04-B80E-4D49-AD7C-B6913CE77A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{972369A4-E44E-48EF-863E-AA321BDE0968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972369A4-E44E-48EF-863E-AA321BDE0968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972369A4-E44E-48EF-863E-AA321BDE0968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972369A4-E44E-48EF-863E-AA321BDE0968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{151EAA30-7017-4F5A-87C1-EA11A1E3EBCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151EAA30-7017-4F5A-87C1-EA11A1E3EBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151EAA30-7017-4F5A-87C1-EA11A1E3EBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151EAA30-7017-4F5A-87C1-EA11A1E3EBCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066C7FE0-CE01-4FF7-9B24-AAA588089927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066C7FE0-CE01-4FF7-9B24-AAA588089927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066C7FE0-CE01-4FF7-9B24-AAA588089927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066C7FE0-CE01-4FF7-9B24-AAA588089927}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60D5188B-C740-49B9-A44B-05F83B25C5F9}
+	EndGlobalSection
+EndGlobal

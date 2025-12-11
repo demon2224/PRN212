@@ -1,0 +1,48 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp 1510\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{066C7FE0-CE01-4FF7-9B24-AAA588089927}|DockPanel\\DockPanel.csproj|d:\\fa25 05\\prn212\\file tu hoc\\wpfapp 1510\\dockpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{066C7FE0-CE01-4FF7-9B24-AAA588089927}|DockPanel\\DockPanel.csproj|solutionrelative:dockpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp 1510\\DockPanel\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "DockPanel\\MainWindow.xaml",
+              "ToolTip": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp 1510\\DockPanel\\MainWindow.xaml",
+              "RelativeToolTip": "DockPanel\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-15T03:49:01.568Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+﻿// This file has been removed as it's not needed for Code First approach
+// All data operations are handled through GameService and GameDbContext

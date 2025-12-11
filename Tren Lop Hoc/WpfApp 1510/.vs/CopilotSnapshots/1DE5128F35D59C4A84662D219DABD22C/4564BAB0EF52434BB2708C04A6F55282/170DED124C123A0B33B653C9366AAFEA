@@ -1,0 +1,22 @@
+﻿using System.Configuration;
+using System.Data;
+using System.Windows;
+
+namespace WpfApp_Canvas_Panel_1510
+{
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
+        }
+        private void btnDisplay_Click(object sender, RoutedEventArgs e)
+        {
+            string CarInfo = $"Car Name: {txtCarName.Text}\n" +
+                             $"Color: {txtColor.Text} \nBrand: {txtBrand.Text}";
+            MessageBox.Show(CarInfo, "Car Details");
+        }
+    }
+}
+
+}

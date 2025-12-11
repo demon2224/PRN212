@@ -1,0 +1,2 @@
+﻿// This file has been removed as ViewModel now directly works with DbContext
+// No service layer is needed for this implementation

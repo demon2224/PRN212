@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|d:\\fa25 05\\prn212\\file tu hoc\\wpfapp_2010\\wpfapp_2010\\admin\\afunc1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|solutionrelative:wpfapp_2010\\admin\\afunc1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|d:\\fa25 05\\prn212\\file tu hoc\\wpfapp_2010\\wpfapp_2010\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|solutionrelative:wpfapp_2010\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|d:\\fa25 05\\prn212\\file tu hoc\\wpfapp_2010\\wpfapp_2010\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|solutionrelative:wpfapp_2010\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|d:\\fa25 05\\prn212\\file tu hoc\\wpfapp_2010\\wpfapp_2010\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|solutionrelative:wpfapp_2010\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|d:\\fa25 05\\prn212\\file tu hoc\\wpfapp_2010\\wpfapp_2010\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|solutionrelative:wpfapp_2010\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|d:\\fa25 05\\prn212\\file tu hoc\\wpfapp_2010\\wpfapp_2010\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|solutionrelative:wpfapp_2010\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|d:\\fa25 05\\prn212\\file tu hoc\\wpfapp_2010\\wpfapp_2010\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|solutionrelative:wpfapp_2010\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|d:\\fa25 05\\prn212\\file tu hoc\\wpfapp_2010\\wpfapp_2010\\admin\\afunc1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|solutionrelative:wpfapp_2010\\admin\\afunc1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|d:\\fa25 05\\prn212\\file tu hoc\\wpfapp_2010\\wpfapp_2010\\admin\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC1219BA-2AC4-41DC-B810-5E694D116B61}|WpfApp_2010\\WpfApp_2010.csproj|solutionrelative:wpfapp_2010\\admin\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp_2010\\MainWindow.xaml",
+              "ToolTip": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\MainWindow.xaml",
+              "RelativeToolTip": "WpfApp_2010\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-22T02:42:43.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\ViewModels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "WpfApp_2010\\ViewModels\\BaseViewModel.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\ViewModels\\BaseViewModel.cs",
+              "RelativeToolTip": "WpfApp_2010\\ViewModels\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T08:22:55.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\ViewModels\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "WpfApp_2010\\ViewModels\\ProductViewModel.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\ViewModels\\ProductViewModel.cs",
+              "RelativeToolTip": "WpfApp_2010\\ViewModels\\ProductViewModel.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAgwA0BAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T08:19:34.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "WpfApp_2010\\Services\\ProductService.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\Services\\ProductService.cs",
+              "RelativeToolTip": "WpfApp_2010\\Services\\ProductService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T08:19:04.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "WpfApp_2010\\Commands\\RelayCommand.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "WpfApp_2010\\Commands\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T08:18:50.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "WpfApp_2010\\Models\\Product.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\Models\\Product.cs",
+              "RelativeToolTip": "WpfApp_2010\\Models\\Product.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAxwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T08:18:40.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "afunc1.xaml",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\admin\\afunc1.xaml",
+              "RelativeDocumentMoniker": "WpfApp_2010\\admin\\afunc1.xaml",
+              "ToolTip": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\admin\\afunc1.xaml",
+              "RelativeToolTip": "WpfApp_2010\\admin\\afunc1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-20T01:47:20.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "afunc1.xaml.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\admin\\afunc1.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp_2010\\admin\\afunc1.xaml.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\admin\\afunc1.xaml.cs",
+              "RelativeToolTip": "WpfApp_2010\\admin\\afunc1.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAlwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T01:47:14.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "admin.xaml",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\admin\\admin.xaml",
+              "RelativeDocumentMoniker": "WpfApp_2010\\admin\\admin.xaml",
+              "ToolTip": "D:\\FA25 05\\PRN212\\file tu hoc\\WpfApp_2010\\WpfApp_2010\\admin\\admin.xaml",
+              "RelativeToolTip": "WpfApp_2010\\admin\\admin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-20T01:41:27.254Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

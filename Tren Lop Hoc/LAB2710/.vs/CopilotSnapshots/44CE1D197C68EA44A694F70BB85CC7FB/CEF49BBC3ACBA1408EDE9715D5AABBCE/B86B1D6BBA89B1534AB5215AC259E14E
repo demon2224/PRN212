@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+
+namespace LAB2710.Models;
+
+public partial class GameDbContext : DbContext
+{
+    public GameDbContext()
+    {
+    }
+
+    public GameDbContext(DbContextOptions<GameDbContext> options)
+        : base(options)
+    {
+    }
+
+    public virtual DbSet<Game> Games { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            optionsBuilder.UseSqlServer("Server=localhost;Database=GameDB;User Id=sa;Password=123456;TrustServerCertificate=True;");
+        }
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Game>(entity =>
+        {
+            entity.HasKey(e => e.GameId);
+
+            entity.ToTable("Game");
+
+            entity.Property(e => e.GameId)
+                .HasColumnName("GameID")
+                .ValueGeneratedOnAdd();
+
+            entity.Property(e => e.Genre)
+                .HasMaxLength(50)
+                .IsUnicode(true);
+
+            entity.Property(e => e.Title)
+                .HasMaxLength(100)
+                .IsRequired()
+                .IsUnicode(true);
+
+            entity.Property(e => e.Price)
+                .HasColumnType("float");
+        });
+
+        OnModelCreatingPartial(modelBuilder);
+    }
+
+    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+}

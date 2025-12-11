@@ -1,0 +1,60 @@
+using Microsoft.Extensions.Configuration;
+using System.IO;
+using System.Reflection;
+
+namespace LAB2710.Configuration
+{
+    public static class ConfigurationHelper
+    {
+        private static IConfiguration? _configuration;
+
+        public static IConfiguration Configuration
+        {
+            get
+            {
+                if (_configuration == null)
+                {
+                    var builder = new ConfigurationBuilder();
+                    
+                    // Try multiple paths to find appsettings.json
+                    var basePaths = new[]
+                    {
+                        Directory.GetCurrentDirectory(),
+                        Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
+                        AppDomain.CurrentDomain.BaseDirectory
+                    };
+
+                    foreach (var basePath in basePaths)
+                    {
+                        if (!string.IsNullOrEmpty(basePath))
+                        {
+                            var configPath = Path.Combine(basePath, "appsettings.json");
+                            if (File.Exists(configPath))
+                            {
+                                builder.SetBasePath(basePath);
+                                builder.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+                                break;
+                            }
+                        }
+                    }
+
+                    _configuration = builder.Build();
+                }
+                return _configuration;
+            }
+        }
+
+        public static string GetConnectionString(string name)
+        {
+            var connectionString = Configuration.GetConnectionString(name);
+            
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                // Fallback to hardcoded connection string if appsettings.json not found
+                return "Server=localhost;Database=GameDB;User Id=sa;Password=123456;TrustServerCertificate=True;";
+            }
+            
+            return connectionString;
+        }
+    }
+}

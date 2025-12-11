@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace WpfApp_2010.customer
+{
+    /// <summary>
+    /// Interaction logic for customer.xaml
+    /// </summary>
+    public partial class customer : Window
+    {
+        public customer()
+        {
+            InitializeComponent();
+            // Load default page (trống)
+            CustomerFrame.Navigate(new customer.customerf1());
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            WpfApp_2010.MainWindow mainWindow = new WpfApp_2010.MainWindow();
+            mainWindow.Show();
+            this.Close(); // Đóng customer window
+        }
+
+        private void MenuOrders_Click(object sender, RoutedEventArgs e)
+        {
+            CustomerFrame.Navigate(new customer.customerf1());
+        }
+
+        private void MenuProfile_Click(object sender, RoutedEventArgs e)
+        {
+            CustomerFrame.Navigate(new customer.customerf2());
+        }
+
+        private void MenuSupport_Click(object sender, RoutedEventArgs e)
+        {
+            CustomerFrame.Navigate(new customer.customerf3());
+        }
+    }
+}

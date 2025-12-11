@@ -1,0 +1,32 @@
+﻿namespace AnhDemon
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Clear(); // Clear the console
+            
+            string msg = "***** Welcome to C#.NET Programming *****";
+            Console.WriteLine("{0}", msg);
+            Console.WriteLine(); // Add empty line for better formatting
+
+            // Process any incoming args.
+            if (args.Length > 0)
+            {
+                Console.WriteLine("Command line arguments received:");
+                for (int i = 0; i < args.Length; i++)
+                {
+                    Console.WriteLine($"Arg[{i}]: {args[i]}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No command line arguments provided.");
+            }
+
+            Console.WriteLine(); // Add empty line
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey(); // Use ReadKey instead of ReadLine for better UX
+        }
+    }
+}

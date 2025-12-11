@@ -1,0 +1,120 @@
+﻿namespace Language
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("=== CACH KHAI BAO VA SU DUNG BIEN ===\n");
+
+            // === CACH 1: Khai bao truc tiep ===
+            Console.WriteLine("Toi ten la Anh Tuan va toi o Can Tho !"); //cach 1
+            Console.WriteLine("Ten toi la {0} va toi o {1} !", "Anh Tuan", "Can Tho");//cach 2
+
+            // === CACH 2: Khai bao bien truyen thong ===
+            string name = "Anh Tuan";
+            int age = 22;
+            Console.WriteLine("Ten toi la " + name + " va toi o " + age + " !"); //cach thong dung
+            Console.WriteLine($"Ten toi la {name} va toi o {age} !"); //cach rut gon lai (.Net)
+
+            // === CACH 3: Khai bao voi var (type inference) ===
+            var fullName = "Nguyen Anh Tuan"; // C# tu dong nhan dien kieu string
+            var currentAge = 23; // C# tu dong nhan dien kieu int
+            var height = 1.75; // C# tu dong nhan dien kieu double
+            Console.WriteLine($"Khai bao voi var: {fullName}, {currentAge} tuoi, cao {height}m");
+
+            // === CACH 4: Khai bao const (hang so) ===
+            const string SCHOOL_NAME = "FPT University";
+            const int MAX_STUDENTS = 1000;
+            Console.WriteLine($"Truong: {SCHOOL_NAME}, toi da {MAX_STUDENTS} sinh vien");
+
+            // === CACH 5: Khai bao readonly ===
+            readonly DateTime today = DateTime.Now;
+            Console.WriteLine($"Ngay hom nay: {today:dd/MM/yyyy}");
+
+            // === CACH 6: Khai bao nullable ===
+            string? optionalName = null;
+            int? optionalAge = null;
+            Console.WriteLine($"Ten co the null: {optionalName ?? "Chua nhap"}");
+            Console.WriteLine($"Tuoi co the null: {optionalAge?.ToString() ?? "Chua nhap"}");
+
+            // === CACH 7: Khai bao array ===
+            string[] cities = { "Can Tho", "Ho Chi Minh", "Ha Noi" };
+            int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+            var scores = new[] { 8.5, 9.0, 7.5 }; // array voi var
+            Console.WriteLine($"Cac thanh pho: {string.Join(", ", cities)}");
+
+            // === CACH 8: Khai bao List ===
+            List<string> subjects = new List<string> { "Math", "Physics", "Chemistry" };
+            var hobbies = new List<string> { "Doc sach", "Nghe nhac", "Choi game" };
+            Console.WriteLine($"Mon hoc: {string.Join(", ", subjects)}");
+
+            // === CACH 9: Khai bao Dictionary ===
+            Dictionary<string, int> studentGrades = new Dictionary<string, int>
+            {
+                ["Math"] = 85,
+                ["Physics"] = 90,
+                ["Chemistry"] = 88
+            };
+            Console.WriteLine($"Diem Toan: {studentGrades["Math"]}");
+
+            // === CACH 10: Khai bao Tuple ===
+            var person = (Name: "Anh Tuan", Age: 22, City: "Can Tho");
+            (string personName, int personAge, string city) = person; // destructuring
+            Console.WriteLine($"Tuple: {person.Name}, {person.Age}, {person.City}");
+
+            // === CACH 11: Khai bao anonymous object ===
+            var student = new { Name = "Anh Tuan", Age = 22, Grade = "A" };
+            Console.WriteLine($"Anonymous object: {student.Name}, {student.Age}, {student.Grade}");
+
+            // === CACH 12: Pattern matching voi is ===
+            object someValue = "Hello World";
+            if (someValue is string text)
+            {
+                Console.WriteLine($"Day la string: {text}");
+            }
+
+            // === CACH 13: Target-typed new (C# 9.0+) ===
+            List<int> numberList = new() { 1, 2, 3, 4, 5 };
+            Dictionary<string, string> config = new()
+            {
+                ["Database"] = "SqlServer",
+                ["Cache"] = "Redis"
+            };
+
+            // === INPUT TU USER ===
+            Console.WriteLine("\n=== NHAP THONG TIN ===");
+            Console.WriteLine("Nhap ten cua ban:");
+            string? name1 = Console.ReadLine();
+            Console.WriteLine("Nhap tuoi cua ban:");
+            int age1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Ten cua toi la {name1} va toi nam nay toi {age1} tuoi");
+
+            // === SO NGUYEN TO (UNCOMMENTED) ===
+            Console.WriteLine("\n=== KIEM TRA SO NGUYEN TO ===");
+            Console.WriteLine("Nhap so nguyen to:");
+            int n = Convert.ToInt32(Console.ReadLine());
+            
+            if (IsPrime(n))
+            {
+                Console.WriteLine("Day la so nguyen to!");
+            } 
+            else
+            {
+                Console.WriteLine("Day khong phai la so nguyen to!");
+            }
+        }
+
+        private static bool IsPrime(int n)
+        {
+            if (n < 2) return false;        
+            if (n == 2) return true;
+            if (n % 2 == 0) return false;
+            
+            for (int i = 3; i <= Math.Sqrt(n); i += 2)
+            {
+                if (n % i == 0) return false;
+            }
+            return true;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+﻿namespace BaiTap
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Clear();
+            Console.WriteLine("=== THONG TIN SINH VIEN ===\n");
+
+            // Tạo biến sinh viên với var (anonymous object)
+            var sinhVien = new
+            {
+                MSSV = "SE171234",
+                TenSV = "Nguyen Anh Tuan", 
+                NamSinh = 2002
+            };
+
+            // In ra thông tin sinh viên
+            Console.WriteLine("Thong tin sinh vien:");
+            Console.WriteLine($"Ma so sinh vien: {sinhVien.MSSV}");
+            Console.WriteLine($"Ten sinh vien: {sinhVien.TenSV}");
+            Console.WriteLine($"Nam sinh: {sinhVien.NamSinh}");
+            
+            // Tính tuổi hiện tại
+            int tuoiHienTai = DateTime.Now.Year - sinhVien.NamSinh;
+            Console.WriteLine($"Tuoi hien tai: {tuoiHienTai}");
+
+            // In theo format đẹp hơn
+            Console.WriteLine("\n=== BANG THONG TIN ===");
+            Console.WriteLine("┌─────────────────────┬─────────────────────┐");
+            Console.WriteLine("│ Thong tin           │ Gia tri             │");
+            Console.WriteLine("├─────────────────────┼─────────────────────┤");
+            Console.WriteLine($"│ MSSV                │ {sinhVien.MSSV,-19} │");
+            Console.WriteLine($"│ Ten sinh vien       │ {sinhVien.TenSV,-19} │");
+            Console.WriteLine($"│ Nam sinh            │ {sinhVien.NamSinh,-19} │");
+            Console.WriteLine($"│ Tuoi                │ {tuoiHienTai,-19} │");
+            Console.WriteLine("└─────────────────────┴─────────────────────┘");
+
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,15 @@
+﻿<Window x:Class="AnhTuanPEChuan.View.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="200" Width="300">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBox Margin="0,5" Text="{Binding Email}" />
+            <PasswordBox Margin="0,5" x:Name="pw"/>
+            <Button Content="Login" Margin="0,10"
+        Command="{Binding LoginCommand}"
+        CommandParameter="{Binding ElementName=pw}" />
+
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\bin\Debug\net8.0-windows\WpfApp Button Demon 1510.exe
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\bin\Debug\net8.0-windows\WpfApp Button Demon 1510.deps.json
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\bin\Debug\net8.0-windows\WpfApp Button Demon 1510.runtimeconfig.json
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\bin\Debug\net8.0-windows\WpfApp Button Demon 1510.dll
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\bin\Debug\net8.0-windows\WpfApp Button Demon 1510.pdb
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\App.g.cs
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\WpfApp Button Demon 1510_MarkupCompile.cache
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\WpfApp Button Demon 1510_MarkupCompile.lref
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\MainWindow.baml
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\WpfApp Button Demon 1510.g.resources
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\WpfApp Button Demon 1510.GeneratedMSBuildEditorConfig.editorconfig
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\WpfApp Button Demon 1510.AssemblyInfoInputs.cache
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\WpfApp Button Demon 1510.AssemblyInfo.cs
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\WpfApp Button Demon 1510.csproj.CoreCompileInputs.cache
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\WpfApp Button Demon 1510.dll
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\refint\WpfApp Button Demon 1510.dll
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\WpfApp Button Demon 1510.pdb
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\WpfApp Button Demon 1510.genruntimeconfig.cache
+D:\FA25 05\PRN212\file tu hoc\WpfApp 1510\WpfApp Button Demon 1510\obj\Debug\net8.0-windows\ref\WpfApp Button Demon 1510.dll

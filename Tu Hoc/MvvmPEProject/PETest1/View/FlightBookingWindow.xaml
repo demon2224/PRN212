@@ -1,0 +1,59 @@
+﻿<Window x:Class="PETest1.View.FlightBookingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PETest1.View"
+        mc:Ignorable="d"
+        Title="FlightBookingWindow" Height="450" Width="1096">
+    <Grid Margin="10,10,0,10" HorizontalAlignment="Left" Width="708">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Input Fields for Adding New Customer -->
+        <StackPanel  Orientation="Horizontal" Margin="0,0,-365,10">
+            <!-- TextBox for Name -->
+            <TextBox Width="97" Margin="5"    Tag="PassengerName"  Text="{Binding NewBooking.PasserngerName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Width="108" Margin="5"    Tag="FlightNumber"  Text="{Binding NewBooking.FlightNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Width="112" Margin="5"    Tag="Departure"  Text="{Binding NewBooking.Departure, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Width="116" Margin="5"    Tag="Destination"  Text="{Binding NewBooking.Destination, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Width="132" Margin="5"    Tag="DepartureDate"  Text="{Binding NewBooking.DepartureDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Width="133" Margin="5"    Tag="DepartureTime"  Text="{Binding NewBooking.DepartureTime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Width="113" Margin="5"    Tag="SeatClass"  Text="{Binding NewBooking.SeatClass, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Width="148" Margin="5"   Tag="Price" Text="{Binding NewBooking.Price, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Content="Add" Command="{Binding AddCommand}" Margin="5" />
+        </StackPanel>
+
+        <!-- DataGrid for Displaying Customers -->
+        <DataGrid ItemsSource="{Binding FlightBookings}" 
+                SelectedItem="{Binding SelectedBooking, Mode=OneWayToSource}" 
+                AutoGenerateColumns="False" Grid.Row="1" Margin="0,0,-365,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True" Width="Auto"/>
+                <DataGridTextColumn Header="PasserngerName" Binding="{Binding PasserngerName}" Width="*"/>
+                <DataGridTextColumn Header="FlightNumber" Binding="{Binding FlightNumber}" Width="*"/>
+                <DataGridTextColumn Header="Departure" Binding="{Binding Departure}" Width="*"/>
+                <DataGridTextColumn Header="Destination" Binding="{Binding Destination}" Width="*"/>
+                <DataGridTextColumn Header="Destination" Binding="{Binding DepartureDate}" Width="*"/>
+                <DataGridTextColumn Header="DepartureTime" Binding="{Binding DepartureTime}" Width="*"/>
+                <DataGridTextColumn Header="SeatClass" Binding="{Binding SeatClass}" Width="*"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="*"/>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- TextBox hiển thị dữ liệu từ SelectedCustomer -->
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="2">
+
+            <Button Content="Update" Command="{Binding UpdateCommand}" Margin="5"/>
+            <Button Content="Delete" Command="{Binding DeleteCommand}" Margin="5"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

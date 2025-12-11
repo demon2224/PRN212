@@ -1,0 +1,263 @@
+﻿namespace Language
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("=== CACH KHAI BAO VA SU DUNG BIEN ===\n");
+
+            // === CACH 1: Khai bao truc tiep ===
+            Console.WriteLine("Toi ten la Anh Tuan va toi o Can Tho !"); //cach 1
+            Console.WriteLine("Ten toi la {0} va toi o {1} !", "Anh Tuan", "Can Tho");//cach 2
+            
+            // === THEM CAC CACH KHAI BAO KHAC ===
+            
+            // === CACH 1A: String interpolation voi format ===
+            string studentName = "Anh Tuan";
+            int studentAge = 22;
+            double gpa = 8.75;
+            Console.WriteLine($"Ten: {studentName:10} | Tuoi: {studentAge:D3} | GPA: {gpa:F2}"); // Format output
+            
+            // === CACH 1B: Raw string literals (C# 11+) ===
+            string rawString = """
+                Day la raw string
+                Co the viet nhieu dong
+                Khong can escape characters like "quotes" or \backslash
+                """;
+            Console.WriteLine($"Raw string: {rawString}");
+            
+            // === CACH 1C: Verbatim strings ===
+            string filePath = @"C:\Users\AnhTuan\Documents\file.txt"; // Khong can escape \
+            string multiLineString = @"Dong 1
+Dong 2
+Dong 3";
+            Console.WriteLine($"File path: {filePath}");
+            
+            // === CACH 1D: String concatenation operators ===
+            string greeting = "Xin chao" + " " + studentName + "!";
+            string info = $"Ho ten: {studentName}" + Environment.NewLine + $"Tuoi: {studentAge}";
+            Console.WriteLine(info);
+
+            // === CACH 2: Khai bao bien truyen thong ===
+            string? name = "Anh Tuan";
+            int age = 22;
+            Console.WriteLine("Ten toi la " + name + " va toi o " + age + " !"); //cach thong dung
+            Console.WriteLine($"Ten toi la {name} va toi o {age} !"); //cach rut gon lai (.Net)
+
+            // === CACH 3: Khai bao voi var (type inference) ===
+            var fullName = "Nguyen Anh Tuan"; // C# tu dong nhan dien kieu string
+            var currentAge = 23; // C# tu dong nhan dien kieu int
+            var height = 1.75; // C# tu dong nhan dien kieu double
+            Console.WriteLine($"Khai bao voi var: {fullName}, {currentAge} tuoi, cao {height}m");
+
+            // === CACH 4: Khai bao const (hang so) ===
+            const string SCHOOL_NAME = "FPT University";
+            const int MAX_STUDENTS = 1000;
+            Console.WriteLine($"Truong: {SCHOOL_NAME}, toi da {MAX_STUDENTS} sinh vien");
+
+            // === CACH 5: Khai bao static readonly (chi dung trong class) ===
+            DateTime today = DateTime.Now; // Binh thuong trong method
+            Console.WriteLine($"Ngay hom nay: {today:dd/MM/yyyy}");
+
+            // === CACH 6: Khai bao nullable ===
+            string? optionalName = null;
+            int? optionalAge = null;
+            Console.WriteLine($"Ten co the null: {optionalName ?? "Chua nhap"}");
+            Console.WriteLine($"Tuoi co the null: {optionalAge?.ToString() ?? "Chua nhap"}");
+
+            // === CACH 7: Khai bao array ===
+            string[] cities = { "Can Tho", "Ho Chi Minh", "Ha Noi" };
+            int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+            var scores = new[] { 8.5, 9.0, 7.5 }; // array voi var
+            Console.WriteLine($"Cac thanh pho: {string.Join(", ", cities)}");
+
+            // === CACH 8: Khai bao List ===
+            List<string> subjects = new List<string> { "Math", "Physics", "Chemistry" };
+            var hobbies = new List<string> { "Doc sach", "Nghe nhac", "Choi game" };
+            Console.WriteLine($"Mon hoc: {string.Join(", ", subjects)}");
+            
+            // === CACH 8A: Collection expressions (C# 12+) ===
+            int[] modernArray = [1, 2, 3, 4, 5]; // Cach moi nhat
+            List<string> modernList = ["Apple", "Banana", "Orange"];
+            Dictionary<string, int> modernDict = new() { ["A"] = 1, ["B"] = 2 };
+            Console.WriteLine($"Modern array: {string.Join(", ", modernArray)}");
+            
+            // === CACH 8B: Span va ReadOnlySpan ===
+            Span<int> span = stackalloc int[5] { 1, 2, 3, 4, 5 }; // Allocation tren stack
+            ReadOnlySpan<char> readOnlySpan = "Hello World".AsSpan();
+            Console.WriteLine($"Span length: {span.Length}, ReadOnlySpan: {readOnlySpan.ToString()}");
+            
+            // === CACH 8C: Memory va ReadOnlyMemory ===
+            Memory<int> memory = new int[] { 10, 20, 30, 40, 50 };
+            ReadOnlyMemory<char> readOnlyMemory = "C# Programming".AsMemory();
+            Console.WriteLine($"Memory span: {memory.Span[0]}, ReadOnlyMemory length: {readOnlyMemory.Length}");
+
+            // === CACH 9: Khai bao Dictionary ===
+            Dictionary<string, int> studentGrades = new Dictionary<string, int>
+            {
+                ["Math"] = 85,
+                ["Physics"] = 90,
+                ["Chemistry"] = 88
+            };
+            Console.WriteLine($"Diem Toan: {studentGrades["Math"]}");
+
+            // === CACH 10: Khai bao Tuple ===
+            var person = (Name: "Anh Tuan", Age: 22, City: "Can Tho");
+            (string personName, int personAge, string city) = person; // destructuring
+            Console.WriteLine($"Tuple: {person.Name}, {person.Age}, {person.City}");
+
+            // === CACH 11: Khai bao anonymous object ===
+            var student = new { Name = "Anh Tuan", Age = 22, Grade = "A" };
+            Console.WriteLine($"Anonymous object: {student.Name}, {student.Age}, {student.Grade}");
+
+            // === CACH 12: Pattern matching voi is ===
+            object someValue = "Hello World";
+            if (someValue is string text)
+            {
+                Console.WriteLine($"Day la string: {text}");
+            }
+
+            // === CACH 13: Target-typed new (C# 9.0+) ===
+            List<int> numberList = new() { 1, 2, 3, 4, 5 };
+            Dictionary<string, string> config = new()
+            {
+                ["Database"] = "SqlServer",
+                ["Cache"] = "Redis"
+            };
+            
+            // === CACH 13A: Record types (C# 9+) ===
+            var personRecord = new PersonRecord("Anh Tuan", 22);
+            var (recordName, recordAge) = personRecord; // Deconstruction
+            Console.WriteLine($"Record: {personRecord}, Name: {recordName}");
+            
+            // === CACH 13B: Init-only properties ===
+            var immutableStudent = new ImmutableStudent 
+            { 
+                Name = "Anh Tuan", 
+                Age = 22,
+                StudentId = "SE123456"
+            };
+            Console.WriteLine($"Immutable student: {immutableStudent.Name}");
+            
+            // === CACH 13C: Required properties (C# 11+) ===
+            var requiredStudent = new RequiredStudent
+            {
+                Name = "Required Name", // Bat buoc phai co
+                Age = 20
+            };
+            
+            // === CACH 13D: File-scoped types ===
+            var fileStudent = new FileStudent { Name = "File Student", Grade = "A" };
+            
+            // === CACH 13E: Global using va implicit using ===
+            // (Can khai bao o dau file hoac trong .csproj)
+            
+            // === CACH 13F: Ref returns va ref locals ===
+            int[] refArray = [10, 20, 30];
+            ref int refValue = ref GetFirstElement(ref refArray);
+            refValue = 100; // Thay doi gia tri trong array
+            Console.WriteLine($"Ref modified array: {string.Join(", ", refArray)}");
+            
+            // === CACH 13G: Stackalloc ===
+            Span<byte> stackBuffer = stackalloc byte[256]; // Allocation tren stack
+            stackBuffer[0] = 65; // 'A'
+            stackBuffer[1] = 66; // 'B'
+            Console.WriteLine($"Stack buffer: {(char)stackBuffer[0]}{(char)stackBuffer[1]}");
+            
+            // === CACH 13H: Using declarations ===
+            using var disposableResource = new MemoryStream();
+            // Tu dong dispose khi ket thuc scope
+            
+            // === CACH 13I: Switch expressions ===
+            string dayType = DateTime.Now.DayOfWeek switch
+            {
+                DayOfWeek.Monday or DayOfWeek.Tuesday or DayOfWeek.Wednesday 
+                    or DayOfWeek.Thursday or DayOfWeek.Friday => "Ngay lam viec",
+                DayOfWeek.Saturday or DayOfWeek.Sunday => "Cuoi tuan",
+                _ => "Khong xac dinh"
+            };
+            Console.WriteLine($"Hom nay la: {dayType}");
+            
+            // === CACH 13J: Pattern matching enhancements ===
+            object testValue = 42;
+            string description = testValue switch
+            {
+                int i when i > 0 => $"So duong: {i}",
+                int i when i < 0 => $"So am: {i}",
+                int => "So khong",
+                string s => $"Chuoi: {s}",
+                null => "Null value",
+                _ => "Khong biet kieu gi"
+            };
+            Console.WriteLine($"Pattern matching: {description}");
+
+            // === INPUT TU USER ===
+            Console.WriteLine("\n=== NHAP THONG TIN ===");
+            Console.WriteLine("Nhap ten cua ban:");
+            string? name1 = Console.ReadLine();
+            Console.WriteLine("Nhap tuoi cua ban:");
+            int age1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Ten cua toi la {name1} va toi nam nay toi {age1} tuoi");
+
+            // === SO NGUYEN TO (UNCOMMENTED) ===
+            Console.WriteLine("\n=== KIEM TRA SO NGUYEN TO ===");
+            Console.WriteLine("Nhap so nguyen to:");
+            int n = Convert.ToInt32(Console.ReadLine());
+            
+            if (IsPrime(n))
+            {
+                Console.WriteLine("Day la so nguyen to!");
+            } 
+            else
+            {
+                Console.WriteLine("Day khong phai la so nguyen to!");
+            }
+        }
+
+        // === HELPER METHODS VA TYPES ===
+        
+        private static ref int GetFirstElement(ref int[] array)
+        {
+            return ref array[0];
+        }
+
+        private static bool IsPrime(int n)
+        {
+            if (n < 2) return false;        
+            if (n == 2) return true;
+            if (n % 2 == 0) return false;
+            
+            for (int i = 3; i <= Math.Sqrt(n); i += 2)
+            {
+                if (n % i == 0) return false;
+            }
+            return true;
+        }
+    }
+}
+
+// === RECORD TYPES (C# 9+) ===
+public record PersonRecord(string Name, int Age);
+
+// === INIT-ONLY PROPERTIES ===
+public class ImmutableStudent
+{
+    public string Name { get; init; } = "";
+    public int Age { get; init; }
+    public string StudentId { get; init; } = "";
+}
+
+// === REQUIRED PROPERTIES (C# 11+) ===
+public class RequiredStudent
+{
+    public required string Name { get; set; }
+    public required int Age { get; set; }
+    public string? Grade { get; set; }
+}
+
+// === FILE-SCOPED TYPES ===
+file class FileStudent
+{
+    public string Name { get; set; } = "";
+    public string Grade { get; set; } = "";
+}

@@ -1,0 +1,20 @@
+﻿namespace BaiTap
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // Tạo biến sinh viên với var (anonymous object)
+            var sinhVien = new
+            {
+                MSSV = "SE171234",
+                TenSV = "Nguyen Anh Tuan", 
+                NamSinh = 2002
+            };
+
+           
+
+          
+    }
+}

@@ -1,0 +1,281 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\models\\categoriesrespo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\models\\categoriesrespo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\models\\bookrespo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\models\\bookrespo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\view\\addbookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\view\\addbookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\view\\updatebookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\view\\updatebookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\viewmodel\\sachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\viewmodel\\sachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\models\\bookcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\models\\bookcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\models\\bookmanagementdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\models\\bookmanagementdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|d:\\fa25 05\\prn212\\depe\\wpf_study\\wpf_study\\wpf_study.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{33F6BB42-79DD-412D-9B96-A4C18CF4472B}|WPF_Study\\WPF_Study.csproj|solutionrelative:wpf_study\\wpf_study.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\ViewModel\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "WPF_Study\\ViewModel\\RelayCommand.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\ViewModel\\RelayCommand.cs",
+              "RelativeToolTip": "WPF_Study\\ViewModel\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T14:59:33.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "WPF_Study\\Models\\Book.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\Book.cs",
+              "RelativeToolTip": "WPF_Study\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T14:57:45.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookManagementDbContext.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\BookManagementDbContext.cs",
+              "RelativeDocumentMoniker": "WPF_Study\\Models\\BookManagementDbContext.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\BookManagementDbContext.cs",
+              "RelativeToolTip": "WPF_Study\\Models\\BookManagementDbContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA4wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T14:57:10.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserAccount.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\UserAccount.cs",
+              "RelativeDocumentMoniker": "WPF_Study\\Models\\UserAccount.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\UserAccount.cs",
+              "RelativeToolTip": "WPF_Study\\Models\\UserAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T14:56:51.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\App.xaml",
+              "RelativeDocumentMoniker": "WPF_Study\\App.xaml",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\App.xaml",
+              "RelativeToolTip": "WPF_Study\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-07T14:56:04.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\App.xaml.cs",
+              "RelativeDocumentMoniker": "WPF_Study\\App.xaml.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\App.xaml.cs",
+              "RelativeToolTip": "WPF_Study\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T14:55:59.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WPF_Study.csproj",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\WPF_Study.csproj",
+              "RelativeDocumentMoniker": "WPF_Study\\WPF_Study.csproj",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\WPF_Study.csproj",
+              "RelativeToolTip": "WPF_Study\\WPF_Study.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-22T00:09:08.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookCategory.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\BookCategory.cs",
+              "RelativeDocumentMoniker": "WPF_Study\\Models\\BookCategory.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\BookCategory.cs",
+              "RelativeToolTip": "WPF_Study\\Models\\BookCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:11:40.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoriesRespo.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\CategoriesRespo.cs",
+              "RelativeDocumentMoniker": "WPF_Study\\Models\\CategoriesRespo.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\CategoriesRespo.cs",
+              "RelativeToolTip": "WPF_Study\\Models\\CategoriesRespo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T14:46:28.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateBookWindow.xaml",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\View\\UpdateBookWindow.xaml",
+              "RelativeDocumentMoniker": "WPF_Study\\View\\UpdateBookWindow.xaml",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\View\\UpdateBookWindow.xaml",
+              "RelativeToolTip": "WPF_Study\\View\\UpdateBookWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-21T08:28:50.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddBookWindow.xaml",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\View\\AddBookWindow.xaml",
+              "RelativeDocumentMoniker": "WPF_Study\\View\\AddBookWindow.xaml",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\View\\AddBookWindow.xaml",
+              "RelativeToolTip": "WPF_Study\\View\\AddBookWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-21T02:59:29.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SachViewModel.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\ViewModel\\SachViewModel.cs",
+              "RelativeDocumentMoniker": "WPF_Study\\ViewModel\\SachViewModel.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\ViewModel\\SachViewModel.cs",
+              "RelativeToolTip": "WPF_Study\\ViewModel\\SachViewModel.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAmwAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:03:34.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookRespo.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\BookRespo.cs",
+              "RelativeDocumentMoniker": "WPF_Study\\Models\\BookRespo.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\Models\\BookRespo.cs",
+              "RelativeToolTip": "WPF_Study\\Models\\BookRespo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:52:12.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WPF_Study\\View\\MainWindow.xaml",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\View\\MainWindow.xaml",
+              "RelativeToolTip": "WPF_Study\\View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-20T15:41:09.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\View\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPF_Study\\View\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\FA25 05\\PRN212\\depe\\WPF_Study\\WPF_Study\\View\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WPF_Study\\View\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T16:43:33.202Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

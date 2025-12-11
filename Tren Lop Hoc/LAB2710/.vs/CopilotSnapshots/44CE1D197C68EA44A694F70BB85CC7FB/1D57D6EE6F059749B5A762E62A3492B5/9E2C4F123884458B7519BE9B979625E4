@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace LAB2710.Models;
+
+public partial class Game
+{
+    public int GameId { get; set; }
+
+    public string Title { get; set; } = null!;
+
+    public string? Genre { get; set; }
+
+    public double? Price { get; set; }
+
+    public DateTime? ReleaseDate { get; set; }
+}

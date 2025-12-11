@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y6tERXPod9w=",
+  "success": true,
+  "projectFilePath": "D:\\FA25 05\\PRN212\\file tu hoc\\Chatbox\\Chatbox\\Chatbox.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tuanl\\.nuget\\packages\\system.io.pipelines\\9.0.9\\system.io.pipelines.9.0.9.nupkg.sha512",
+    "C:\\Users\\tuanl\\.nuget\\packages\\system.text.encodings.web\\9.0.9\\system.text.encodings.web.9.0.9.nupkg.sha512",
+    "C:\\Users\\tuanl\\.nuget\\packages\\system.text.json\\9.0.9\\system.text.json.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

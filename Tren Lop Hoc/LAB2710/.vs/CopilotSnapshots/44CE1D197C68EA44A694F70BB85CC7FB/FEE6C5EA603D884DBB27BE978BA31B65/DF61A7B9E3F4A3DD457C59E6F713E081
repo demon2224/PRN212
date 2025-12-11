@@ -1,0 +1,5 @@
+﻿{
+  "ConnectionStrings": {
+    "GameDB": "Server=localhost;Database=GameDB;User Id=sa;Password=123456;TrustServerCertificate=True;"
+  }
+}
